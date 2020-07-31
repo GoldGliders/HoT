@@ -9,4 +9,8 @@
                                    (format t "Round ~A: Tail~%" x))
                             )))
   (format t "Heads: ~A, Tails: ~A~%" head tail)
+  (if (> head tail)
+      (progn (format t "You won~%"))
+      (progn (format t "You lost~%"))
+      )
 )
